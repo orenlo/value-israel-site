@@ -1,0 +1,16 @@
+Hero update
+===========
+
+- Removed the "Scouting exceptional companies" pill entirely.
+- Added an automatic six-image Tel Aviv hero slideshow.
+- Images cross-fade every 6 seconds with a subtle slow zoom.
+- Kept the hero brighter while maintaining enough contrast for the white text.
+- Added very subtle progress indicators at the bottom of the hero.
+- Five additional photographs are loaded from Unsplash and the existing local Tel Aviv image remains the first slide.
+
+Photo sources used under the Unsplash License:
+- Paz Roz — Tel Aviv buildings from the park
+- Dan Gold — Tel Aviv skyline and Mediterranean Sea
+- Adam Jang — Tel Aviv beachfront
+- Daniel Lerman — Tel Aviv skyline at sunset
+- Shalev Cohen — Tel Aviv / Jaffa cityscape
