@@ -4,12 +4,12 @@ import { motion } from "motion/react";
 
 const criteria = [
   {
-    title: "Growth-Stage Technology",
-    text: "Companies with established product-market fit, meaningful commercial traction and the capacity to scale globally.",
+    title: "Growth-Stage Companies",
+    text: "Companies with established product-market fit, meaningful commercial traction, and the capacity to scale globally.",
   },
   {
     title: "Israeli DNA",
-    text: "Israel-based companies, Israeli-founded global businesses and companies with a meaningful connection to the Israeli technology ecosystem.",
+    text: "Israel-based companies, Israeli-founded global businesses, and companies with a meaningful connection to the Israeli technology ecosystem.",
   },
   {
     title: "Exceptional Growth Potential",

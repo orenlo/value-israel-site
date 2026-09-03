@@ -115,6 +115,10 @@ button {
   background: #3b82f6;
 }
 
+.group\/logo {
+  perspective: 900px;
+}
+
 .logo-mark {
   transform-origin: 50% 50%;
   transform-box: fill-box;
@@ -124,7 +128,7 @@ button {
 }
 
 .group\/logo:hover .logo-mark {
-  transform: rotate(360deg);
+  transform: rotateY(360deg);
   filter: drop-shadow(0 10px 24px rgba(38, 120, 255, 0.28));
 }
 

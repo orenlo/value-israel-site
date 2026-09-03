@@ -9,15 +9,15 @@ const partners = [
     domain: "tpg.com",
     href: "https://www.tpg.com",
     description:
-      "A global alternative asset manager with deep experience across growth, private equity and technology investing.",
+      "A global alternative asset manager with deep experience across growth, private equity, and technology investing.",
   },
   {
     name: "Tau Capital",
-    subtitle: "Advisory Board",
+    subtitle: "Advisory Board Member",
     domain: "taucapital.vc",
     href: "https://www.taucapital.vc",
     description:
-      "A growth-stage DeepTech investment firm backing transformative science and engineering companies.",
+      "A growth-stage deep-tech investment firm backing transformative science and engineering companies.",
   },
 ];
 

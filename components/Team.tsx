@@ -82,6 +82,7 @@ export default function Team() {
 
         <div className="mt-14 space-y-8">
           <motion.article
+            id="founder"
             initial={{ opacity: 0, y: 70, scale: 0.97, rotateX: 4 }}
             whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
             viewport={{ once: true, amount: 0.16 }}
@@ -111,14 +112,25 @@ export default function Team() {
                   <h3 className="mt-4 text-4xl font-light tracking-[-0.04em] sm:text-5xl">Ron Stern</h3>
 
                   <div className="mt-4 flex flex-wrap gap-3">
-                    <div className="inline-flex items-center gap-3 rounded-full border border-blue-500/25 bg-blue-500/8 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.20em] text-blue-200">
-                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-[9px] font-bold text-[#17365D]">CU</span>
+                    <a
+                      href="https://www.columbia.edu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-3 rounded-full border border-blue-500/25 bg-blue-500/8 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.20em] text-blue-200 transition hover:border-blue-300/50 hover:bg-blue-500/12"
+                    >
+                      <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white p-1.5">
+                        <img
+                          src="https://www.google.com/s2/favicons?domain=columbia.edu&sz=128"
+                          alt="Columbia University icon"
+                          className="h-full w-full object-contain"
+                        />
+                      </span>
                       Columbia University
-                    </div>
+                    </a>
                   </div>
 
                   <p className="mt-7 text-sm font-light leading-8 text-white/54 sm:text-base">
-                    Ron studied at Columbia and has built his career across investment, operating leadership and board-level value creation. He currently serves as Advisor to TPG, Advisory Board Member at Tau Capital and Chief Executive Officer of Value Israel, while also serving as Chairman of BlueGreen Water Technologies and a Board Member at SeeTrue AI. His recent experience includes senior leadership at OurCrowd and board and director roles across technology companies including Ondas, Atlas Obscura, Edgybees and SaNOtize.
+                    Ron studied at Columbia University and has built his career across investment, operating leadership, and board-level value creation. He currently serves as Advisor to TPG, Advisory Board Member at Tau Capital, and Chief Executive Officer of Value Israel, while also serving as Chairman of BlueGreen Water Technologies and a Board Member at SeeTrue AI. His recent experience includes senior leadership at OurCrowd and board and director roles across technology companies, including Ondas, Atlas Obscura, Edgybees, and SaNOtize.
                   </p>
 
                   <CompanyRow title="Current organizations" items={currentCompanies} />
@@ -139,6 +151,7 @@ export default function Team() {
           </motion.article>
 
           <motion.article
+            id="analyst"
             initial={{ opacity: 0, y: 70, scale: 0.97, rotateX: 4 }}
             whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
             viewport={{ once: true, amount: 0.18 }}
@@ -177,7 +190,7 @@ export default function Team() {
                   </div>
 
                   <p className="mt-7 max-w-2xl text-sm font-light leading-8 text-white/54 sm:text-base">
-                    Oren is an analyst at Value Israel and an Electrical and Computer Engineer who previously worked at Intel. He supports company research, opportunity screening, investor materials and sourcing across Israel&apos;s technology ecosystem.
+                    Oren is an analyst at Value Israel and an electrical and computer engineer who previously worked at Intel. He supports company research, opportunity screening, investor materials, and sourcing across Israel&apos;s technology ecosystem.
                   </p>
                 </div>
 

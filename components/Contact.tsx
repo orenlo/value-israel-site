@@ -37,7 +37,7 @@ export default function Contact() {
           </h2>
 
           <p className="mt-10 max-w-2xl text-base font-light leading-8 text-white/54 sm:text-lg">
-            For investor relationships, company introductions and opportunities across Israel&apos;s technology ecosystem, contact Value Israel directly.
+            For investor relationships, company introductions, and opportunities across Israel&apos;s technology ecosystem, contact Value Israel directly.
           </p>
 
           <div className="mt-12 grid gap-4 md:grid-cols-2">

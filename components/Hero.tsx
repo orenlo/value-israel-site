@@ -15,12 +15,12 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-[#161719]">
       <div
-        className="absolute inset-0 scale-[1.02] bg-cover bg-center brightness-[0.80] contrast-[1.03] saturate-[0.96]"
+        className="absolute inset-0 scale-[1.02] bg-cover bg-center brightness-[0.96] contrast-[1.02] saturate-[0.98]"
         style={{ backgroundImage: "url('/images/tel-aviv-hero-real.jpg')" }}
       />
-      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(6,12,22,0.58)_0%,rgba(8,15,26,0.42)_28%,rgba(7,12,20,0.58)_56%,rgba(8,12,18,0.86)_100%)]" />
-      <div className="absolute inset-0 bg-black/18" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_34%,rgba(255,255,255,0.07)_0%,rgba(0,0,0,0.12)_22%,rgba(0,0,0,0.58)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(6,12,22,0.30)_0%,rgba(8,15,26,0.24)_28%,rgba(7,12,20,0.42)_58%,rgba(8,12,18,0.72)_100%)]" />
+      <div className="absolute inset-0 bg-black/5" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_34%,rgba(255,255,255,0.12)_0%,rgba(0,0,0,0.06)_22%,rgba(0,0,0,0.42)_100%)]" />
 
       <div className="relative z-10 mx-auto flex min-h-screen w-[min(100%-2rem,1540px)] items-center justify-center px-4 pb-16 pt-28 sm:px-8">
         <div className="flex w-full max-w-7xl flex-col items-center text-center">
@@ -73,7 +73,7 @@ export default function Hero() {
             transition={{ delay: 0.68, duration: 1.2 }}
             className="mt-5 max-w-2xl text-sm font-light leading-7 text-white/72 sm:text-base"
           >
-            Value Israel provides global investors with differentiated access to high-quality Israeli growth companies through trusted local relationships, rigorous filtering and direct market intelligence.
+            Value Israel gives global investors differentiated access to high-quality Israeli growth companies through trusted local relationships, rigorous filtering, and direct market intelligence.
           </motion.p>
 
           <motion.button

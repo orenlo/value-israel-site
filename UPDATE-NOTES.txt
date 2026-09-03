@@ -1,0 +1,10 @@
+Value Israel — How We Work + Columbia update
+
+Changes in this package:
+- How We Work cards are smaller and more compact.
+- Arrows were removed from inside the cards and placed between Access → Filter → Connect → Partner.
+- Arrows are intentionally small and subtle.
+- Cards remain clickable; the selected card receives a blue highlight.
+- Ron Stern's Columbia University badge now includes the Columbia University site icon and links to columbia.edu.
+
+Copy the app, components, and public folders into the root of the existing Next.js project and replace matching files.

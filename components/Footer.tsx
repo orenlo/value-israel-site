@@ -24,7 +24,7 @@ export default function Footer() {
         <p>© {new Date().getFullYear()} Value Israel. All rights reserved.</p>
         <div className="flex flex-wrap gap-5">
           <a className="transition hover:text-white" href="https://il.linkedin.com/in/ron-stern-b0064634" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <span>Private &amp; confidential by nature</span>
+          <span>Private and confidential by nature.</span>
         </div>
       </div>
     </footer>
