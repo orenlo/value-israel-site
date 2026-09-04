@@ -23,12 +23,12 @@ const partners = [
 
 export default function Partners() {
   return (
-    <section id="advisory" className="relative overflow-hidden border-y border-white/8 bg-[#111317] py-24 sm:py-32">
+    <section id="partners" className="relative overflow-hidden border-y border-white/8 bg-[#33383E] py-24 sm:py-32">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.14] blur-[1px]"
         style={{ backgroundImage: "url('/images/value-israel-banner-reference.png')" }}
       />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,#111317_0%,rgba(17,19,23,0.92)_28%,rgba(17,19,23,0.86)_72%,#111317_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,#33383E_0%,rgba(80,88,98,0.92)_28%,rgba(75,83,92,0.88)_72%,#33383E_100%)]" />
       <div className="grid-glow absolute inset-0 opacity-50" />
 
       <div className="section-shell relative z-10">
@@ -40,7 +40,7 @@ export default function Partners() {
           className="text-center"
         >
           <p className="text-[10px] font-semibold uppercase tracking-[0.48em] text-blue-400 sm:text-xs">
-            Advisory relationships
+            Partners
           </p>
           <h2 className="mx-auto mt-6 max-w-4xl text-4xl font-extralight tracking-[-0.04em] text-white sm:text-6xl">
             Trusted by leading global investors.

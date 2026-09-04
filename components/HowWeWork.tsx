@@ -48,7 +48,7 @@ export default function HowWeWork() {
   const [selectedStep, setSelectedStep] = useState<number | null>(null);
 
   return (
-    <section id="process" className="relative overflow-hidden bg-[#121417] py-20 sm:py-24">
+    <section id="process" className="relative overflow-hidden bg-[#33383E] py-20 sm:py-24">
       <div className="section-shell relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -59,7 +59,7 @@ export default function HowWeWork() {
         >
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-[0.38em] text-blue-400 sm:text-xs">
-              How we work
+              Our Approach
             </p>
             <h2 className="mt-4 text-4xl font-extralight tracking-[-0.045em] sm:text-5xl">
               Discreet and focused.

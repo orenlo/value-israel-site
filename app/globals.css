@@ -1,10 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #161719;
+  --background: #2B2F34;
   --foreground: #ffffff;
-  --blue: #2678ff;
-  --blue-light: #67a6ff;
+  --surface-1: #33383E;
+  --surface-2: #3B4148;
+  --blue-deep: #071E46;
+  --blue: #176BFF;
+  --blue-bright: #2E9CFF;
+  --cyan: #68E7FF;
 }
 
 * {
@@ -18,7 +22,9 @@ html {
 
 body {
   margin: 0;
-  background: var(--background);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(103, 183, 255, 0.045), transparent 30%),
+    linear-gradient(180deg, #33383E 0%, #2B2F34 48%, #25292E 100%);
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -45,32 +51,33 @@ button {
 }
 
 .gradient-text {
-  background: linear-gradient(105deg, #f1f7ff 0%, #a7c9ff 22%, #4f93ff 60%, #1e63db 100%);
+  background: linear-gradient(102deg, #effcff 0%, #9beaff 20%, #54c8ff 43%, #329eff 68%, #3478ff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.hero-overlay {
-  background:
-    linear-gradient(to bottom, rgba(5, 12, 22, 0.08) 0%, rgba(6, 12, 21, 0.18) 28%, rgba(8, 12, 18, 0.52) 72%, #161719 100%),
-    linear-gradient(to right, rgba(5, 8, 13, 0.64), rgba(5, 8, 13, 0.14) 25%, rgba(5, 8, 13, 0.12) 75%, rgba(5, 8, 13, 0.64));
+.hero-title-shadow {
+  filter:
+    drop-shadow(0 2px 3px rgba(0, 0, 0, 0.82))
+    drop-shadow(0 10px 28px rgba(0, 0, 0, 0.55));
 }
 
 .glass-pill {
-  background: linear-gradient(180deg, rgba(48, 50, 55, 0.88), rgba(28, 30, 34, 0.86));
+  background: linear-gradient(180deg, rgba(13, 38, 78, 0.76), rgba(9, 15, 24, 0.78));
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 1px 0 rgba(120, 220, 255, 0.11),
     0 18px 55px rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(18px);
 }
 
 .logo-card,
 .window-panel {
-  background: linear-gradient(145deg, rgba(255,255,255,0.065), rgba(255,255,255,0.018));
+  background:
+    linear-gradient(145deg, rgba(59, 65, 72, 0.98), rgba(56, 66, 77, 0.90) 52%, rgba(52, 58, 65, 0.98) 100%);
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.06),
-    0 24px 80px rgba(0,0,0,0.16);
+    inset 0 1px 0 rgba(92, 218, 255, 0.09),
+    0 24px 80px rgba(0,0,0,0.18);
 }
 
 .window-dots {
@@ -82,20 +89,20 @@ button {
   width: 0.7rem;
   height: 0.7rem;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(95, 232, 255, 0.12);
+  background: rgba(40, 136, 255, 0.10);
 }
 
 .grid-glow {
   background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    linear-gradient(rgba(26, 118, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(55, 184, 255, 0.045) 1px, transparent 1px);
   background-size: 42px 42px;
   mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent);
 }
 
 .timeline-line {
-  background: linear-gradient(to bottom, rgba(59,130,246,0.95), rgba(148,163,184,0.24), rgba(59,130,246,0.32));
+  background: linear-gradient(to bottom, rgba(34,197,255,0.95), rgba(37,99,235,0.30), rgba(8,145,178,0.32));
 }
 
 ::-webkit-scrollbar {
@@ -103,16 +110,16 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-  background: #101113;
+  background: #3B4148;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4b5563;
+  background: linear-gradient(#173f8f, #36c6ff);
   border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3b82f6;
+  background: #49d9ff;
 }
 
 .group\/logo {
@@ -129,7 +136,20 @@ button {
 
 .group\/logo:hover .logo-mark {
   transform: rotateY(360deg);
-  filter: drop-shadow(0 10px 24px rgba(38, 120, 255, 0.28));
+  filter: drop-shadow(0 10px 24px rgba(56, 189, 248, 0.34));
+}
+
+
+.nav-wordmark {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.72);
+}
+
+.nav-wordmark-israel {
+  background: linear-gradient(102deg, #dff9ff 0%, #7edcff 38%, #3aa6ff 68%, #4d7dff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 1px 8px rgba(0, 0, 0, 0.5));
 }
 
 @media (prefers-reduced-motion: reduce) {

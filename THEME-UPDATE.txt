@@ -1,0 +1,7 @@
+Value Israel theme update
+
+- Main background: #505862
+- Alternating sections: #59616A
+- Card / navigation surfaces: #444B53
+- Slightly darker overall than the previous lighter-gray version
+- Larger Value Israel wordmark in the top-left navigation

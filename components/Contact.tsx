@@ -13,7 +13,7 @@ function ArrowUpRightIcon() {
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative overflow-hidden bg-[#111317] py-24 sm:py-36">
+    <section id="contact" className="relative overflow-hidden bg-[#33383E] py-24 sm:py-36">
       <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
       <div className="section-shell relative">
         <motion.div

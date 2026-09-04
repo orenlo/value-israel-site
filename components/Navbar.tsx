@@ -12,20 +12,20 @@ type NavItem = {
 
 const links: NavItem[] = [
   {
-    label: "Who We Are?",
-    id: "advisory",
+    label: "Who We Are",
+    id: "about",
     children: [
-      { label: "Advisory", id: "advisory" },
-      { label: "Founder", id: "founder" },
-      { label: "Analyst", id: "analyst" },
+      { label: "About", id: "about" },
+      { label: "Partners", id: "partners" },
+      { label: "Team", id: "team" },
     ],
   },
   {
     label: "How We Work",
     id: "process",
     children: [
-      { label: "Our Process", id: "process" },
-      { label: "Company Fit", id: "company-fit" },
+      { label: "Our Approach", id: "process" },
+      { label: "Investment Focus", id: "company-fit" },
     ],
   },
   {
@@ -36,7 +36,7 @@ const links: NavItem[] = [
 
 function MenuIcon() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.6">
+    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.6">
       <path d="M4 7h16M4 12h16M4 17h16" />
     </svg>
   );
@@ -44,7 +44,7 @@ function MenuIcon() {
 
 function CloseIcon() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.6">
+    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.6">
       <path d="M6 6l12 12M18 6L6 18" />
     </svg>
   );
@@ -79,7 +79,7 @@ export default function Navbar() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (!element) return;
-    const y = element.getBoundingClientRect().top + window.scrollY - 52;
+    const y = element.getBoundingClientRect().top + window.scrollY - 50;
     window.scrollTo({ top: y, behavior: "smooth" });
     setOpen(false);
   };
@@ -88,37 +88,37 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "border-b border-white/8 bg-[#111318]/92 shadow-lg shadow-black/10 backdrop-blur-2xl"
+          ? "border-b border-blue-400/10 bg-[#3B4148]/94 shadow-lg shadow-black/20 backdrop-blur-2xl"
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-[48px] w-[min(100%-1.5rem,1640px)] items-center justify-between px-1 sm:px-3 lg:px-5">
+      <div className="mx-auto flex h-[46px] w-[min(100%-1.5rem,1640px)] items-center justify-between px-1 sm:px-3 lg:px-5">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Back to top"
           className="cursor-pointer"
         >
-          <Logo className="h-8 w-9" withWordmark />
+          <Logo className="h-9 w-10" withWordmark />
         </button>
 
-        <nav className="hidden items-center gap-6 xl:flex">
+        <nav className="hidden items-center gap-11 xl:flex">
           {links.map((link) => (
             <div key={link.label} className="group/nav relative">
               <button
                 onClick={() => scrollToSection(link.id)}
-                className="flex cursor-pointer items-center gap-1.5 py-3 text-[9px] font-semibold uppercase tracking-[0.14em] text-white/66 transition hover:text-white"
+                className="flex cursor-pointer items-center gap-1.5 py-3 text-[8px] font-semibold uppercase tracking-[0.18em] text-white/62 transition hover:text-cyan-200"
               >
                 {link.label}
                 {link.children && <ChevronIcon />}
               </button>
 
               {link.children && (
-                <div className="pointer-events-none absolute right-0 top-[38px] min-w-[164px] translate-y-2 rounded-xl border border-white/10 bg-[#111318]/96 p-1.5 opacity-0 shadow-2xl shadow-black/30 backdrop-blur-2xl transition-all duration-200 group-hover/nav:pointer-events-auto group-hover/nav:translate-y-0 group-hover/nav:opacity-100">
+                <div className="pointer-events-none absolute right-0 top-[36px] min-w-[168px] translate-y-2 rounded-xl border border-blue-400/12 bg-[#3B4148]/97 p-1.5 opacity-0 shadow-2xl shadow-black/40 backdrop-blur-2xl transition-all duration-200 group-hover/nav:pointer-events-auto group-hover/nav:translate-y-0 group-hover/nav:opacity-100">
                   {link.children.map((child) => (
                     <button
                       key={child.label}
                       onClick={() => scrollToSection(child.id)}
-                      className="block w-full cursor-pointer rounded-lg px-3 py-2 text-left text-[9px] font-medium uppercase tracking-[0.10em] text-white/58 transition hover:bg-white/[0.06] hover:text-white"
+                      className="block w-full cursor-pointer rounded-lg px-3 py-2 text-left text-[9px] font-medium uppercase tracking-[0.12em] text-white/55 transition hover:bg-blue-500/10 hover:text-cyan-200"
                     >
                       {child.label}
                     </button>
@@ -131,7 +131,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setOpen(true)}
-          className="cursor-pointer rounded-full border border-white/10 bg-black/10 p-1.5 text-white xl:hidden"
+          className="cursor-pointer rounded-full border border-blue-400/15 bg-[#3B4148]/55 p-1.5 text-white xl:hidden"
           aria-label="Open menu"
         >
           <MenuIcon />
@@ -143,7 +143,7 @@ export default function Navbar() {
           <>
             <motion.button
               aria-label="Close menu"
-              className="fixed inset-0 z-40 bg-black/65 backdrop-blur-sm xl:hidden"
+              className="fixed inset-0 z-40 bg-[#25292E]/78 backdrop-blur-sm xl:hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -151,24 +151,24 @@ export default function Navbar() {
             />
 
             <motion.div
-              className="fixed right-0 top-0 z-50 flex h-dvh w-[84%] max-w-sm flex-col overflow-y-auto bg-[#17191d] p-7 shadow-2xl xl:hidden"
+              className="fixed right-0 top-0 z-50 flex h-dvh w-[84%] max-w-sm flex-col overflow-y-auto bg-[#3B4148] p-7 shadow-2xl xl:hidden"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
             >
               <div className="flex items-center justify-between">
-                <Logo className="h-8 w-9" withWordmark />
+                <Logo className="h-9 w-10" withWordmark />
                 <button
                   onClick={() => setOpen(false)}
-                  className="cursor-pointer rounded-full border border-white/10 p-2"
+                  className="cursor-pointer rounded-full border border-blue-400/15 p-2"
                   aria-label="Close menu"
                 >
                   <CloseIcon />
                 </button>
               </div>
 
-              <div className="mt-12 flex flex-col gap-7">
+              <div className="mt-12 flex flex-col gap-8">
                 {links.map((link, index) => (
                   <motion.div
                     key={link.label}
@@ -184,12 +184,12 @@ export default function Navbar() {
                     </button>
 
                     {link.children && (
-                      <div className="mt-2.5 flex flex-col gap-1.5 border-l border-white/10 pl-4">
+                      <div className="mt-3 flex flex-col gap-2 border-l border-blue-400/15 pl-4">
                         {link.children.map((child) => (
                           <button
                             key={child.label}
                             onClick={() => scrollToSection(child.id)}
-                            className="cursor-pointer text-left text-[10px] uppercase tracking-[0.14em] text-white/42 transition hover:text-white"
+                            className="cursor-pointer text-left text-[10px] uppercase tracking-[0.14em] text-white/42 transition hover:text-cyan-200"
                           >
                             {child.label}
                           </button>

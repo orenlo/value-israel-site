@@ -58,7 +58,7 @@ function CompanyRow({ title, items }: { title: string; items: { name: string; do
 
 export default function Team() {
   return (
-    <section id="team" className="bg-[#15171a] py-24 sm:py-32">
+    <section id="team" className="bg-[#2B2F34] py-24 sm:py-32">
       <div className="section-shell">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -68,7 +68,7 @@ export default function Team() {
           className="grid gap-8 lg:grid-cols-2 lg:items-end"
         >
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-400">Leadership</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-400">Team</p>
             <h2 className="mt-5 text-4xl font-extralight tracking-[-0.045em] sm:text-6xl">
               Experience with
               <br />
@@ -88,10 +88,10 @@ export default function Team() {
             viewport={{ once: true, amount: 0.16 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             style={{ transformPerspective: 1200 }}
-            className="window-panel overflow-hidden rounded-[2rem] border border-white/9 bg-[#1d2024]"
+            className="window-panel overflow-hidden rounded-[2rem] border border-white/9 bg-[#3B4148]"
           >
             <div className="grid md:grid-cols-[0.72fr_1.28fr]">
-              <div className="relative min-h-[520px] overflow-hidden bg-[#25282d]">
+              <div className="relative min-h-[520px] overflow-hidden bg-[#2B2F34]">
                 <img
                   src={ronPhoto}
                   alt=""
@@ -157,10 +157,10 @@ export default function Team() {
             viewport={{ once: true, amount: 0.18 }}
             transition={{ delay: 0.08, duration: 1, ease: [0.16, 1, 0.3, 1] }}
             style={{ transformPerspective: 1200 }}
-            className="window-panel overflow-hidden rounded-[2rem] border border-white/9 bg-[linear-gradient(145deg,#20242a,#17191d)]"
+            className="window-panel overflow-hidden rounded-[2rem] border border-white/9 bg-[linear-gradient(145deg,#25292E,#3B4148)]"
           >
             <div className="grid md:grid-cols-[0.72fr_1.28fr]">
-              <div className="relative min-h-[500px] overflow-hidden bg-[#22262b]">
+              <div className="relative min-h-[500px] overflow-hidden bg-[#2B2F34]">
                 <img
                   src={orenPhoto}
                   alt=""

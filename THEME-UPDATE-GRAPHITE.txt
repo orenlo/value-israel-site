@@ -1,0 +1,8 @@
+Value Israel palette refresh
+
+Main background: #2B2F34
+Secondary sections: #33383E
+Cards / panels: #3B4148
+Dark accents: #25292E
+
+Blue and cyan are now reserved primarily for brand accents, links, highlights, and interaction states.

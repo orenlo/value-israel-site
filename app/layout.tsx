@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Value Israel",
   },
   description:
-    "Value Israel connects leading global investors with differentiated opportunities across Israel's technology ecosystem.",
+    "Value Israel provides global investors differentiated access to high-quality Israeli growth companies through trusted local relationships, rigorous filtering, and direct market intelligence.",
   applicationName: "Value Israel",
   keywords: [
     "Value Israel",
@@ -33,20 +33,20 @@ export const metadata: Metadata = {
     siteName: "Value Israel",
     title: "Value Israel | Creating Needle-Moving Value",
     description:
-      "Creating needle-moving value for the world's best investors in Israel.",
+      "Creating needle-moving value for the world's best investors, in Israel.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Value Israel | Creating Needle-Moving Value",
     description:
-      "Creating needle-moving value for the world's best investors in Israel.",
+      "Creating needle-moving value for the world's best investors, in Israel.",
   },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#111317",
+  themeColor: "#0D131B",
 };
 
 export default function RootLayout({

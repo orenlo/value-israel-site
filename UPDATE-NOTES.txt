@@ -1,10 +1,12 @@
-Value Israel — How We Work + Columbia update
+Value Israel update
 
-Changes in this package:
-- How We Work cards are smaller and more compact.
-- Arrows were removed from inside the cards and placed between Access → Filter → Connect → Partner.
-- Arrows are intentionally small and subtle.
-- Cards remain clickable; the selected card receives a blue highlight.
-- Ron Stern's Columbia University badge now includes the Columbia University site icon and links to columbia.edu.
-
-Copy the app, components, and public folders into the root of the existing Next.js project and replace matching files.
+- Who We Are no longer includes a question mark.
+- Who We Are submenu: About, Partners, Team.
+- Larger visual separation between top navigation tabs.
+- Hero slogan updated to: Creating needle-moving value for the world's best investors, in Israel
+- About copy moved out of the hero and into a dedicated section below the opening image.
+- About copy updated to use “provides”.
+- Site base/background changed to black.
+- Blue design language expanded from deep navy through royal blue to cyan.
+- Hero slideshow now mixes Tel Aviv with real photography from Haifa, the Dead Sea, Jerusalem, the Negev and the Sea of Galilee.
+- Hero imagery is brighter while preserving text contrast.
