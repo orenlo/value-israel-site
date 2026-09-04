@@ -88,7 +88,7 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0, rotate: 0 }}
               viewport={{ once: true, amount: 0.35 }}
               transition={{ delay: 0.12, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-12 hidden w-full justify-center rounded-[2rem] border border-amber-200/10 bg-[linear-gradient(145deg,rgba(91,52,31,0.22),rgba(196,138,88,0.06))] p-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_18px_55px_rgba(0,0,0,0.13)] lg:flex"
+              className="mt-12 hidden w-full justify-center rounded-[2rem] border border-white/10 bg-[linear-gradient(145deg,rgba(59,65,72,0.92),rgba(51,56,62,0.72))] p-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_18px_55px_rgba(0,0,0,0.13)] lg:flex"
             >
               <BiblicalSandalsMark gradientId="sandalBlueDesktop" />
             </motion.div>
@@ -104,12 +104,22 @@ export default function About() {
             </p>
 
             <div className="mt-10 flex justify-center lg:hidden">
-              <div className="w-full max-w-sm rounded-[2rem] border border-amber-200/10 bg-[linear-gradient(145deg,rgba(91,52,31,0.22),rgba(196,138,88,0.06))] p-7">
+              <div className="w-full max-w-sm rounded-[2rem] border border-white/10 bg-[linear-gradient(145deg,rgba(59,65,72,0.92),rgba(51,56,62,0.72))] p-7">
                 <BiblicalSandalsMark gradientId="sandalBlueMobile" />
               </div>
             </div>
 
             <div className="mt-12 h-px w-full bg-gradient-to-r from-blue-950/20 via-blue-400/65 to-cyan-300/25" />
+
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ delay: 0.12, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-8 text-center text-lg font-medium tracking-[-0.02em] text-white/88 sm:text-xl lg:text-2xl"
+            >
+              Not boots on the ground. <span className="text-cyan-300">Sandals on the ground.</span>
+            </motion.p>
           </div>
         </motion.div>
       </div>
