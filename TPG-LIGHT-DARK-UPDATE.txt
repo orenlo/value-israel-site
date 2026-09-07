@@ -1,0 +1,21 @@
+Value Israel — Light / Dark section update
+
+Base used: valueisrael-nextjs-real-sandals-responsive-team-update.zip
+
+Design direction:
+- Kept the compact dark navbar from the base version.
+- Alternating visual rhythm inspired by institutional investment sites such as TPG:
+  Hero: dark / image-led
+  About: warm off-white
+  Partners: deep charcoal
+  Team: warm off-white
+  Our Approach: deep charcoal
+  Investment Focus: warm off-white
+  Contact: deep charcoal
+  Footer: near-black
+- Light sections use dark typography and restrained shadows.
+- Dark sections keep blue/cyan accents and high-contrast white typography.
+- No TPG assets or layout were copied.
+
+Copy update:
+"Investing with leading global investors in differentiated opportunities across Israel's technology ecosystem."

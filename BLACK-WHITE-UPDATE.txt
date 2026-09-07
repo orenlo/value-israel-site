@@ -1,0 +1,11 @@
+Value Israel black/white theme update
+
+- Restored the previous compact dark/translucent navigation bar design.
+- Sections now alternate clearly between white and near-black:
+  About: white
+  Partners: black
+  Team: white
+  Our Approach: black
+  Investment Focus: white
+  Contact: black
+- Footer remains black.

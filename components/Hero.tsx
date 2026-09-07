@@ -38,52 +38,51 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#111214]">
+    <section className="relative min-h-[100svh] overflow-hidden bg-[#17304A]">
       <AnimatePresence mode="sync" initial={false}>
         <motion.div
           key={activeImage}
-          initial={{ opacity: 0, scale: 1.035 }}
-          animate={{ opacity: 1, scale: 1.01 }}
+          initial={{ opacity: 0, scale: 1.025 }}
+          animate={{ opacity: 1, scale: 1.005 }}
           exit={{ opacity: 0 }}
-          transition={{ opacity: { duration: 1.4, ease: "easeInOut" }, scale: { duration: 7.2, ease: "linear" } }}
+          transition={{ opacity: { duration: 1.35, ease: "easeInOut" }, scale: { duration: 7.2, ease: "linear" } }}
           className="absolute inset-0 bg-cover bg-center brightness-[1.08] contrast-[1.01] saturate-[1.03]"
           style={{ backgroundImage: `url('${heroImages[activeImage]}')` }}
         />
       </AnimatePresence>
 
-      {/* Keep the photography visible, but add a soft central scrim so the brand stays readable on bright slides. */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(4,10,18,0.18)_0%,rgba(4,10,18,0.06)_30%,rgba(6,12,20,0.22)_67%,rgba(9,14,21,0.80)_100%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_43%,rgba(5,12,22,0.02)_0%,rgba(5,12,22,0.06)_32%,rgba(3,8,15,0.42)_100%)]" />
-      <div className="pointer-events-none absolute left-1/2 top-[48%] h-[48%] w-[88%] max-w-[1380px] -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-[radial-gradient(ellipse_at_center,rgba(2,8,16,0.60)_0%,rgba(4,12,24,0.40)_38%,rgba(4,10,18,0.16)_58%,transparent_76%)] blur-xl" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(9,26,44,0.14)_0%,rgba(9,26,44,0.03)_30%,rgba(13,35,59,0.18)_67%,rgba(14,34,56,0.68)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_43%,rgba(9,22,38,0.02)_0%,rgba(9,22,38,0.04)_32%,rgba(11,25,42,0.28)_100%)]" />
+      <div className="pointer-events-none absolute left-1/2 top-[48%] h-[46%] w-[88%] max-w-[1380px] -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-[radial-gradient(ellipse_at_center,rgba(12,28,47,0.46)_0%,rgba(16,39,64,0.28)_40%,rgba(17,40,66,0.10)_60%,transparent_76%)] blur-xl" />
 
-      <div className="relative z-10 mx-auto flex min-h-screen w-[min(100%-2rem,1540px)] items-center justify-center px-4 pb-16 pt-24 sm:px-8">
-        <div className="flex w-full max-w-7xl flex-col items-center text-center">
+      <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-[1540px] items-center justify-center px-[clamp(1rem,3vw,3rem)] pb-[clamp(4rem,8vh,7rem)] pt-[clamp(5.5rem,10vh,8rem)]">
+        <div className="flex w-full max-w-[1280px] flex-col items-center text-center">
           <motion.div
-            initial={{ opacity: 0, y: 24, rotate: -8 }}
+            initial={{ opacity: 0, y: 20, rotate: -8 }}
             animate={{ opacity: 1, y: 0, rotate: 0 }}
-            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="mb-8 sm:mb-10"
+            transition={{ duration: 1.15, ease: [0.16, 1, 0.3, 1] }}
+            className="mb-[clamp(1.5rem,4vh,2.5rem)]"
           >
-            <Logo className="h-24 w-28 sm:h-28 sm:w-32" />
+            <Logo className="h-[clamp(4.75rem,6vw,7rem)] w-[clamp(5.5rem,7vw,8rem)]" />
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 34 }}
+            initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.18, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="overflow-visible"
+            transition={{ delay: 0.16, duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full overflow-visible"
           >
-            <h1 className="hero-title-shadow whitespace-nowrap text-[18vw] font-extralight leading-[0.82] tracking-[-0.075em] sm:text-[12vw] lg:text-[9rem] xl:text-[10rem]">
+            <h1 className="hero-title-shadow whitespace-nowrap text-[clamp(3.8rem,8.2vw,9rem)] font-extralight leading-[0.86] tracking-[-0.07em]">
               <span className="text-white">Value</span>
               <span className="gradient-text inline-block pr-[0.18em] font-light">Israel</span>
             </h1>
           </motion.div>
 
           <motion.h2
-            initial={{ opacity: 0, y: 22 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.38, duration: 1.05, ease: [0.16, 1, 0.3, 1] }}
-            className="hero-title-shadow mt-10 max-w-5xl text-balance text-2xl font-light leading-[1.28] tracking-[-0.025em] text-white sm:text-3xl lg:text-4xl"
+            transition={{ delay: 0.36, duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="hero-title-shadow mt-[clamp(1.75rem,4vh,2.5rem)] max-w-[980px] text-balance text-[clamp(1.3rem,2.15vw,2.45rem)] font-light leading-[1.28] tracking-[-0.025em] text-white"
           >
             Creating needle-moving value for the world&apos;s best investors, in Israel
           </motion.h2>
@@ -92,8 +91,8 @@ export default function Hero() {
             onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.82, duration: 1 }}
-            className="mt-14 cursor-pointer rounded-full border border-cyan-300/25 bg-[#08101A]/30 p-3 text-white/88 backdrop-blur-sm transition hover:border-cyan-300/60 hover:bg-blue-950/30 hover:text-cyan-100"
+            transition={{ delay: 0.78, duration: 1 }}
+            className="mt-[clamp(2.5rem,6vh,4rem)] cursor-pointer rounded-full border border-cyan-300/25 bg-[#08101A]/30 p-3 text-white/88 backdrop-blur-sm transition hover:border-cyan-300/60 hover:bg-blue-950/30 hover:text-cyan-100"
             aria-label="Scroll to About section"
           >
             <DownArrow />

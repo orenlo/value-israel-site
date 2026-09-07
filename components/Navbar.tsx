@@ -88,7 +88,7 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "border-b border-blue-400/10 bg-[#3B4148]/94 shadow-lg shadow-black/20 backdrop-blur-2xl"
+          ? "border-b border-blue-400/10 bg-[#294363]/94 shadow-lg shadow-black/20 backdrop-blur-2xl"
           : "bg-transparent"
       }`}
     >
@@ -113,7 +113,7 @@ export default function Navbar() {
               </button>
 
               {link.children && (
-                <div className="pointer-events-none absolute right-0 top-[36px] min-w-[168px] translate-y-2 rounded-xl border border-blue-400/12 bg-[#3B4148]/97 p-1.5 opacity-0 shadow-2xl shadow-black/40 backdrop-blur-2xl transition-all duration-200 group-hover/nav:pointer-events-auto group-hover/nav:translate-y-0 group-hover/nav:opacity-100">
+                <div className="pointer-events-none absolute right-0 top-[36px] min-w-[168px] translate-y-2 rounded-xl border border-blue-400/12 bg-[#294363]/97 p-1.5 opacity-0 shadow-2xl shadow-black/40 backdrop-blur-2xl transition-all duration-200 group-hover/nav:pointer-events-auto group-hover/nav:translate-y-0 group-hover/nav:opacity-100">
                   {link.children.map((child) => (
                     <button
                       key={child.label}
@@ -131,7 +131,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setOpen(true)}
-          className="cursor-pointer rounded-full border border-blue-400/15 bg-[#3B4148]/55 p-1.5 text-white xl:hidden"
+          className="cursor-pointer rounded-full border border-blue-400/15 bg-[#294363]/55 p-1.5 text-white xl:hidden"
           aria-label="Open menu"
         >
           <MenuIcon />
@@ -151,7 +151,7 @@ export default function Navbar() {
             />
 
             <motion.div
-              className="fixed right-0 top-0 z-50 flex h-dvh w-[84%] max-w-sm flex-col overflow-y-auto bg-[#3B4148] p-7 shadow-2xl xl:hidden"
+              className="fixed right-0 top-0 z-50 flex h-dvh w-[84%] max-w-sm flex-col overflow-y-auto bg-[#294363] p-7 shadow-2xl xl:hidden"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}

@@ -19,8 +19,8 @@ const criteria = [
 
 export default function CompanyFit() {
   return (
-    <section id="company-fit" className="relative overflow-hidden bg-[#2B2F34] py-24 sm:py-32">
-      <div className="grid-glow absolute inset-0 opacity-30" />
+    <section id="company-fit" className="relative overflow-hidden bg-[#FBFCFE] py-24 text-[#111317] sm:py-32">
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.025)_1px,transparent_1px)] bg-[size:42px_42px]" />
       <div className="section-shell relative">
         <motion.div
           initial={{ opacity: 0, y: 34 }}
@@ -29,8 +29,8 @@ export default function CompanyFit() {
           transition={{ duration: 0.95 }}
           className="max-w-4xl"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-400">Investment Focus</p>
-          <h2 className="mt-5 text-4xl font-extralight tracking-[-0.045em] sm:text-6xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-600">Investment Focus</p>
+          <h2 className="mt-5 text-4xl font-extralight tracking-[-0.045em] text-[#111317] sm:text-6xl">
             Companies built to scale globally.
           </h2>
         </motion.div>
@@ -43,17 +43,11 @@ export default function CompanyFit() {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true, amount: 0.25 }}
               transition={{ delay: index * 0.09, duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
-              className={`rounded-[2rem] border p-8 transition duration-500 hover:-translate-y-1 sm:p-10 ${
-                index === 0
-                  ? "border-blue-900/40 bg-[linear-gradient(145deg,rgba(4,26,70,0.78),rgba(75,81,89,0.96))] hover:border-blue-600/50"
-                  : index === 1
-                    ? "border-blue-600/30 bg-[linear-gradient(145deg,rgba(8,72,150,0.46),rgba(75,81,89,0.97))] hover:border-blue-400/50"
-                    : "border-cyan-500/25 bg-[linear-gradient(145deg,rgba(7,93,128,0.34),rgba(75,81,89,0.97))] hover:border-cyan-300/45"
-              }`}
+              className="rounded-[2rem] border border-black/8 bg-white p-8 shadow-[0_18px_50px_rgba(15,23,42,0.07)] transition duration-500 hover:-translate-y-1 hover:border-blue-500/25 hover:shadow-[0_24px_60px_rgba(15,23,42,0.10)] sm:p-10"
             >
-              <span className={`block h-px w-12 ${index === 0 ? "bg-blue-700" : index === 1 ? "bg-blue-400" : "bg-cyan-300"}`} />
-              <h3 className="mt-10 text-3xl font-light tracking-[-0.035em]">{item.title}</h3>
-              <p className="mt-5 text-sm font-light leading-7 text-white/48">{item.text}</p>
+              <span className={`block h-px w-12 ${index === 0 ? "bg-blue-800" : index === 1 ? "bg-blue-500" : "bg-cyan-500"}`} />
+              <h3 className="mt-10 text-3xl font-light tracking-[-0.035em] text-[#111317]">{item.title}</h3>
+              <p className="mt-5 text-sm font-light leading-7 text-[#64707C]">{item.text}</p>
             </motion.article>
           ))}
         </div>

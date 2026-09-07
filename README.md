@@ -17,3 +17,7 @@ Copy the `app`, `components`, and `public` folders into your existing Next.js pr
 ```bash
 npm run dev
 ```
+
+## Photo source
+The real sandals photograph used in the About section is by Adam Jang on Unsplash (Jerusalem, Israel) and is available under the Unsplash License:
+https://unsplash.com/photos/pairs-of-assorted-sandal-lot-on-white-textile-I7GHd8PlZqc

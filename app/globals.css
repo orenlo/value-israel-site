@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #2B2F34;
+  --background: #1E3550;
   --foreground: #ffffff;
-  --surface-1: #33383E;
-  --surface-2: #3B4148;
-  --blue-deep: #071E46;
-  --blue: #176BFF;
-  --blue-bright: #2E9CFF;
-  --cyan: #68E7FF;
+  --light-surface: #F7FAFD;
+  --dark-surface: #213650;
+  --blue-deep: #163A67;
+  --blue: #2D7FF7;
+  --blue-bright: #5AAEFF;
+  --cyan: #85E1FF;
 }
 
 * {
@@ -22,9 +22,7 @@ html {
 
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at 50% 0%, rgba(103, 183, 255, 0.045), transparent 30%),
-    linear-gradient(180deg, #33383E 0%, #2B2F34 48%, #25292E 100%);
+  background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -71,38 +69,12 @@ button {
   backdrop-filter: blur(18px);
 }
 
-.logo-card,
-.window-panel {
-  background:
-    linear-gradient(145deg, rgba(59, 65, 72, 0.98), rgba(56, 66, 77, 0.90) 52%, rgba(52, 58, 65, 0.98) 100%);
-  box-shadow:
-    inset 0 1px 0 rgba(92, 218, 255, 0.09),
-    0 24px 80px rgba(0,0,0,0.18);
-}
-
-.window-dots {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.window-dots span {
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 999px;
-  border: 1px solid rgba(95, 232, 255, 0.12);
-  background: rgba(40, 136, 255, 0.10);
-}
-
 .grid-glow {
   background-image:
-    linear-gradient(rgba(26, 118, 255, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(55, 184, 255, 0.045) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.026) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.026) 1px, transparent 1px);
   background-size: 42px 42px;
   mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent);
-}
-
-.timeline-line {
-  background: linear-gradient(to bottom, rgba(34,197,255,0.95), rgba(37,99,235,0.30), rgba(8,145,178,0.32));
 }
 
 ::-webkit-scrollbar {
@@ -110,7 +82,7 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-  background: #3B4148;
+  background: #17304A;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -138,7 +110,6 @@ button {
   transform: rotateY(360deg);
   filter: drop-shadow(0 10px 24px rgba(56, 189, 248, 0.34));
 }
-
 
 .nav-wordmark {
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.72);
