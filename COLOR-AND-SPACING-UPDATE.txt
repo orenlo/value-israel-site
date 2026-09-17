@@ -1,0 +1,8 @@
+Value Israel color + spacing update
+
+- Investment Focus vertical spacing reduced substantially.
+- Oversized heading reduced for desktop and laptop screens.
+- All blue surfaces now use one muted blue family based on #5F7297.
+- Navbar, blue-grid sections, team background and blue UI elements are visually aligned.
+- Organization tabs/cards use a lighter tint of the same blue family.
+- LinkedIn buttons retain LinkedIn brand blue.

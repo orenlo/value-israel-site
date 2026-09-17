@@ -1,0 +1,7 @@
+Investment Focus visual update
+- Blue background adjusted to #4E6E96
+- Larger 64px square grid added across the full section
+- Subtle top/bottom blue overlay for depth
+- Soft cyan/blue glows added in opposite corners
+- Heading enlarged to match the supplied reference more closely
+- Existing three investment-focus cards preserved and restyled to sit naturally on the grid background

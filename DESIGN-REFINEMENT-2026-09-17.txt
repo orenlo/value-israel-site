@@ -1,0 +1,9 @@
+Design refinement:
+- Stronger white / blue-grid alternation
+- Unified brand blue (#526F98)
+- Darker navigation/footer (#3E5878)
+- White partner cards instead of muddy blue fills
+- Light organization tabs (#EEF3F8) with dark blue text
+- LinkedIn buttons retain LinkedIn brand blue
+- Reduced Investment Focus scale/spacing
+- Fixed selected-dot class in Our Approach

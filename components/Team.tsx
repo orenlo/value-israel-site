@@ -47,7 +47,7 @@ function OrganizationGroup({ title, items }: { title: string; items: OrgItem[] }
             href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex min-h-[76px] items-center gap-3 rounded-2xl border border-black/8 bg-[#F8F8F6] px-4 py-3 transition hover:border-blue-500/30 hover:bg-white hover:shadow-[0_12px_30px_rgba(15,23,42,0.08)]"
+            className="group flex min-h-[76px] items-center gap-3 rounded-2xl border border-[#A5BDD3] bg-[#CADCED] px-4 py-3 shadow-[0_6px_18px_rgba(30,64,175,0.06)] transition hover:-translate-y-0.5 hover:border-[#90B0CC] hover:bg-[#BED4E9] hover:shadow-[0_10px_24px_rgba(30,64,175,0.10)]"
           >
             <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-black/5 bg-white p-2">
               <img
@@ -57,8 +57,8 @@ function OrganizationGroup({ title, items }: { title: string; items: OrgItem[] }
               />
             </span>
             <span className="min-w-0">
-              <span className="block text-sm font-medium text-[#111317]">{item.name}</span>
-              <span className="mt-1 block text-xs leading-5 text-[#6B7280]">{item.role}</span>
+              <span className="block text-sm font-medium text-[#244A70]">{item.name}</span>
+              <span className="mt-1 block text-xs leading-5 text-[#5D748B]">{item.role}</span>
             </span>
           </a>
         ))}
@@ -93,7 +93,7 @@ export default function Team() {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, amount: 0.14 }}
             transition={{ duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
-            className="overflow-hidden rounded-[2rem] border border-white/16 bg-[#F8FBFF] shadow-[0_28px_80px_rgba(10,31,54,0.24)]"
+            className="overflow-hidden rounded-[2rem] border border-white/16 bg-[#F9FBFE] shadow-[0_28px_80px_rgba(10,31,54,0.24)]"
           >
             <div className="grid md:grid-cols-[0.68fr_1.32fr]">
               <div className="relative min-h-[520px] overflow-hidden bg-[#E8E9E7]">
@@ -113,14 +113,14 @@ export default function Team() {
 
               <div className="flex flex-col justify-between p-8 sm:p-10 lg:p-12">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.32em] text-blue-600">Founder &amp; CEO</p>
+                  <p className="text-xs uppercase tracking-[0.32em] text-[#547594]">Founder &amp; CEO</p>
                   <h3 className="mt-4 text-4xl font-light tracking-[-0.04em] text-[#111317] sm:text-5xl">Ron Stern</h3>
 
                   <a
                     href="https://www.columbia.edu"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-3 rounded-full border border-blue-500/20 bg-blue-50 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.18em] text-blue-800 transition hover:border-blue-500/40"
+                    className="mt-4 inline-flex items-center gap-3 rounded-full border border-[#A5BDD3] bg-[#CADCED] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.18em] text-[#244A70] shadow-[0_5px_16px_rgba(30,64,175,0.06)] transition hover:border-[#90B0CC] hover:bg-[#BED4E9]"
                   >
                     <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white p-1.5">
                       <img
@@ -145,7 +145,7 @@ export default function Team() {
                   href="https://il.linkedin.com/in/ron-stern-b0064634"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-10 inline-flex w-fit items-center gap-3 rounded-full border border-blue-600/25 bg-blue-50 px-5 py-3 text-sm text-blue-900 transition hover:border-blue-600/45 hover:bg-blue-100"
+                  className="mt-10 inline-flex w-fit items-center gap-3 rounded-full border border-[#0A66C2] bg-[#0A66C2] px-5 py-3 text-sm font-medium text-white shadow-[0_8px_22px_rgba(10,102,194,0.18)] transition hover:-translate-y-0.5 hover:border-[#004182] hover:bg-[#004182] hover:shadow-[0_12px_28px_rgba(10,102,194,0.24)]"
                 >
                   <LinkedinIcon />
                   View Ron on LinkedIn
@@ -160,7 +160,7 @@ export default function Team() {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, amount: 0.16 }}
             transition={{ delay: 0.06, duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
-            className="overflow-hidden rounded-[2rem] border border-white/16 bg-[#F8FBFF] shadow-[0_28px_80px_rgba(10,31,54,0.24)]"
+            className="overflow-hidden rounded-[2rem] border border-white/16 bg-[#F9FBFE] shadow-[0_28px_80px_rgba(10,31,54,0.24)]"
           >
             <div className="grid md:grid-cols-[0.68fr_1.32fr]">
               <div className="relative min-h-[500px] overflow-hidden bg-[#E8E9E7]">
@@ -180,11 +180,11 @@ export default function Team() {
 
               <div className="flex flex-col justify-between p-8 sm:p-10 lg:p-12">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.32em] text-blue-600">Analyst</p>
+                  <p className="text-xs uppercase tracking-[0.32em] text-[#547594]">Analyst</p>
                   <h3 className="mt-4 text-4xl font-light tracking-[-0.04em] text-[#111317] sm:text-5xl">Oren Lowte</h3>
 
                   <div className="mt-4 flex flex-wrap gap-3">
-                    <span className="inline-flex items-center gap-3 rounded-full border border-black/8 bg-[#F8F8F6] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#334155]">
+                    <span className="inline-flex items-center gap-3 rounded-full border border-[#A5BDD3] bg-[#CADCED] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#244A70] shadow-[0_5px_16px_rgba(30,64,175,0.06)]">
                       <img
                         src="https://www.google.com/s2/favicons?domain=bgu.ac.il&sz=128"
                         alt="Ben-Gurion University logo"
@@ -192,7 +192,7 @@ export default function Team() {
                       />
                       Ben-Gurion University
                     </span>
-                    <span className="inline-flex items-center gap-3 rounded-full border border-black/8 bg-[#F8F8F6] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#334155]">
+                    <span className="inline-flex items-center gap-3 rounded-full border border-[#A5BDD3] bg-[#CADCED] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#244A70] shadow-[0_5px_16px_rgba(30,64,175,0.06)]">
                       <img
                         src="https://www.google.com/s2/favicons?domain=intel.com&sz=128"
                         alt="Intel logo"
@@ -211,7 +211,7 @@ export default function Team() {
                   href="https://il.linkedin.com/in/oren-lowte"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-10 inline-flex w-fit items-center gap-3 rounded-full border border-blue-600/25 bg-blue-50 px-5 py-3 text-sm text-blue-900 transition hover:border-blue-600/45 hover:bg-blue-100"
+                  className="mt-10 inline-flex w-fit items-center gap-3 rounded-full border border-[#0A66C2] bg-[#0A66C2] px-5 py-3 text-sm font-medium text-white shadow-[0_8px_22px_rgba(10,102,194,0.18)] transition hover:-translate-y-0.5 hover:border-[#004182] hover:bg-[#004182] hover:shadow-[0_12px_28px_rgba(10,102,194,0.24)]"
                 >
                   <LinkedinIcon />
                   View Oren on LinkedIn

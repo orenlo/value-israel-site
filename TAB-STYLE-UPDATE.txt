@@ -1,0 +1,6 @@
+Tab styling update
+
+- Organization/education/partner tabs use a lighter soft-blue surface (#EAF3FB) with navy text.
+- Hover uses #DDECF9 and a slightly stronger blue border.
+- LinkedIn buttons use LinkedIn brand blue (#0A66C2), with #004182 on hover.
+- Ron and Oren LinkedIn buttons remain identical in layout.

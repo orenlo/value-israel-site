@@ -59,7 +59,7 @@ export default function Partners() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: index * 0.12, duration: 1, ease: [0.16, 1, 0.3, 1] }}
               style={{ transformPerspective: 1200 }}
-              className="group block rounded-[2rem] border border-black/8 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.08)] transition duration-500 hover:-translate-y-1 hover:border-blue-500/25 hover:shadow-[0_26px_70px_rgba(15,23,42,0.12)] sm:p-10"
+              className="group block rounded-[2rem] border border-[#A5BDD3] bg-[#CADCED] p-8 shadow-[0_16px_42px_rgba(30,64,175,0.08)] transition duration-500 hover:-translate-y-1 hover:border-[#90B0CC] hover:bg-[#BED4E9] hover:shadow-[0_22px_54px_rgba(30,64,175,0.12)] sm:p-10"
             >
               <div className="flex items-center gap-5">
                 <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-black/8 bg-white p-3 shadow-xl shadow-black/10">
@@ -70,11 +70,11 @@ export default function Partners() {
                   />
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-[0.30em] text-blue-600">{partner.subtitle}</p>
-                  <h3 className="mt-2 text-3xl font-light tracking-[-0.035em] text-[#111317]">{partner.name}</h3>
+                  <p className="text-xs uppercase tracking-[0.30em] text-[#547594]">{partner.subtitle}</p>
+                  <h3 className="mt-2 text-3xl font-light tracking-[-0.035em] text-[#244A70]">{partner.name}</h3>
                 </div>
               </div>
-              <p className="mt-7 max-w-xl text-sm font-light leading-7 text-[#64707C] sm:text-base">
+              <p className="mt-7 max-w-xl text-sm font-light leading-7 text-[#5D748B] sm:text-base">
                 {partner.description}
               </p>
             </motion.a>
