@@ -34,7 +34,7 @@ export default function Logo({
       </svg>
 
       {withWordmark && (
-        <div className="nav-wordmark flex items-center gap-2.5 text-[16px] font-semibold tracking-[0.07em] sm:text-[17px]">
+        <div className="nav-wordmark flex items-center gap-2.5 text-[15px] font-semibold tracking-[0.07em] sm:text-[17px]">
           <span className={darkWordmark ? "text-[#15171b]" : "text-white"}>Value</span>
           <span className={`h-5 w-px ${darkWordmark ? "bg-black/25" : "bg-white/35"}`} />
           <span className="nav-wordmark-israel font-semibold">Israel</span>

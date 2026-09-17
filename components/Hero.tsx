@@ -5,12 +5,12 @@ import { useEffect, useState } from "react";
 import Logo from "./Logo";
 
 const heroImages = [
-  "/images/tel-aviv-hero-real.jpg",
   "https://images.unsplash.com/photo-1658510981380-059da8878d2d?auto=format&fit=crop&fm=jpg&q=82&w=2400",
   "https://images.unsplash.com/photo-1674003487162-effd2b6a1c68?auto=format&fit=crop&fm=jpg&q=82&w=2400",
   "https://images.unsplash.com/photo-1707337965825-8e5e04426bb1?auto=format&fit=crop&fm=jpg&q=82&w=2400",
   "https://images.unsplash.com/photo-1633088926847-435cdb7e76da?auto=format&fit=crop&fm=jpg&q=82&w=2400",
   "https://images.unsplash.com/photo-1678134017317-4edd53da833d?auto=format&fit=crop&fm=jpg&q=82&w=2400",
+  "/images/tel-aviv-hero-real.jpg",
 ];
 
 function DownArrow() {
@@ -38,7 +38,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-[#17304A]">
+    <section className="relative min-h-[100svh] overflow-hidden bg-[#254A70]">
       <AnimatePresence mode="sync" initial={false}>
         <motion.div
           key={activeImage}
@@ -51,9 +51,9 @@ export default function Hero() {
         />
       </AnimatePresence>
 
-      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(9,26,44,0.14)_0%,rgba(9,26,44,0.03)_30%,rgba(13,35,59,0.18)_67%,rgba(14,34,56,0.68)_100%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_43%,rgba(9,22,38,0.02)_0%,rgba(9,22,38,0.04)_32%,rgba(11,25,42,0.28)_100%)]" />
-      <div className="pointer-events-none absolute left-1/2 top-[48%] h-[46%] w-[88%] max-w-[1380px] -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-[radial-gradient(ellipse_at_center,rgba(12,28,47,0.46)_0%,rgba(16,39,64,0.28)_40%,rgba(17,40,66,0.10)_60%,transparent_76%)] blur-xl" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(4,10,18,0.18)_0%,rgba(4,10,18,0.06)_30%,rgba(6,12,20,0.22)_67%,rgba(9,14,21,0.78)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_43%,rgba(5,12,22,0.02)_0%,rgba(5,12,22,0.06)_32%,rgba(3,8,15,0.38)_100%)]" />
+      <div className="pointer-events-none absolute left-1/2 top-[48%] h-[46%] w-[88%] max-w-[1380px] -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-[radial-gradient(ellipse_at_center,rgba(2,8,16,0.56)_0%,rgba(4,12,24,0.34)_40%,rgba(4,10,18,0.12)_60%,transparent_76%)] blur-xl" />
 
       <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-[1540px] items-center justify-center px-[clamp(1rem,3vw,3rem)] pb-[clamp(4rem,8vh,7rem)] pt-[clamp(5.5rem,10vh,8rem)]">
         <div className="flex w-full max-w-[1280px] flex-col items-center text-center">

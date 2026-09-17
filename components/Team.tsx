@@ -47,7 +47,7 @@ function OrganizationGroup({ title, items }: { title: string; items: OrgItem[] }
             href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex min-h-[76px] items-center gap-3 rounded-2xl border border-black/8 bg-[#F7FAFD] px-4 py-3 transition hover:border-blue-500/30 hover:bg-white hover:shadow-[0_12px_30px_rgba(15,23,42,0.08)]"
+            className="group flex min-h-[76px] items-center gap-3 rounded-2xl border border-black/8 bg-[#F8F8F6] px-4 py-3 transition hover:border-blue-500/30 hover:bg-white hover:shadow-[0_12px_30px_rgba(15,23,42,0.08)]"
           >
             <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-black/5 bg-white p-2">
               <img
@@ -69,16 +69,17 @@ function OrganizationGroup({ title, items }: { title: string; items: OrgItem[] }
 
 export default function Team() {
   return (
-    <section id="team" className="bg-[#F4F8FC] py-24 text-[#111317] sm:py-32">
-      <div className="section-shell">
+    <section id="team" className="relative overflow-hidden bg-[#315D86] py-24 text-white sm:py-32">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_8%,rgba(125,211,252,0.16),transparent_30%),radial-gradient(circle_at_88%_70%,rgba(59,130,246,0.12),transparent_32%)]" />
+      <div className="section-shell relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.28 }}
           transition={{ duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-600">Team</p>
-          <h2 className="mt-5 text-[clamp(2.6rem,5vw,4rem)] font-extralight tracking-[-0.045em] text-[#111317]">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-cyan-200">Team</p>
+          <h2 className="mt-5 text-[clamp(2.6rem,5vw,4rem)] font-extralight tracking-[-0.045em] text-white">
             Experience with
             <br />
             institutional perspective.
@@ -92,10 +93,10 @@ export default function Team() {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, amount: 0.14 }}
             transition={{ duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
-            className="overflow-hidden rounded-[2rem] border border-black/8 bg-white shadow-[0_24px_70px_rgba(15,23,42,0.08)]"
+            className="overflow-hidden rounded-[2rem] border border-white/16 bg-[#F8FBFF] shadow-[0_28px_80px_rgba(10,31,54,0.24)]"
           >
             <div className="grid md:grid-cols-[0.68fr_1.32fr]">
-              <div className="relative min-h-[520px] overflow-hidden bg-[#E7EEF7]">
+              <div className="relative min-h-[520px] overflow-hidden bg-[#E8E9E7]">
                 <img
                   src={ronPhoto}
                   alt=""
@@ -159,10 +160,10 @@ export default function Team() {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, amount: 0.16 }}
             transition={{ delay: 0.06, duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
-            className="overflow-hidden rounded-[2rem] border border-black/8 bg-white shadow-[0_24px_70px_rgba(15,23,42,0.08)]"
+            className="overflow-hidden rounded-[2rem] border border-white/16 bg-[#F8FBFF] shadow-[0_28px_80px_rgba(10,31,54,0.24)]"
           >
             <div className="grid md:grid-cols-[0.68fr_1.32fr]">
-              <div className="relative min-h-[500px] overflow-hidden bg-[#E7EEF7]">
+              <div className="relative min-h-[500px] overflow-hidden bg-[#E8E9E7]">
                 <img
                   src={orenPhoto}
                   alt=""
@@ -183,7 +184,7 @@ export default function Team() {
                   <h3 className="mt-4 text-4xl font-light tracking-[-0.04em] text-[#111317] sm:text-5xl">Oren Lowte</h3>
 
                   <div className="mt-4 flex flex-wrap gap-3">
-                    <span className="inline-flex items-center gap-3 rounded-full border border-black/8 bg-[#F7FAFD] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#334155]">
+                    <span className="inline-flex items-center gap-3 rounded-full border border-black/8 bg-[#F8F8F6] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#334155]">
                       <img
                         src="https://www.google.com/s2/favicons?domain=bgu.ac.il&sz=128"
                         alt="Ben-Gurion University logo"
@@ -191,7 +192,7 @@ export default function Team() {
                       />
                       Ben-Gurion University
                     </span>
-                    <span className="inline-flex items-center gap-3 rounded-full border border-black/8 bg-[#F7FAFD] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#334155]">
+                    <span className="inline-flex items-center gap-3 rounded-full border border-black/8 bg-[#F8F8F6] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#334155]">
                       <img
                         src="https://www.google.com/s2/favicons?domain=intel.com&sz=128"
                         alt="Intel logo"

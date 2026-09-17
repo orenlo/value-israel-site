@@ -35,8 +35,8 @@ export default function HowWeWork() {
   const [active, setActive] = useState<number | null>(null);
 
   return (
-    <section id="process" className="relative overflow-hidden bg-[#24405F] py-20 text-white sm:py-24">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_15%,rgba(103,199,247,0.14),transparent_32%)]" />
+    <section id="process" className="relative overflow-hidden bg-[#F7FAFD] py-20 text-[#111317] sm:py-24">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_15%,rgba(47,129,247,0.08),transparent_32%)]" />
       <div className="section-shell relative">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
@@ -45,11 +45,11 @@ export default function HowWeWork() {
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-4xl"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-cyan-300">Our Approach</p>
-          <h2 className="mt-5 text-[clamp(2.5rem,5vw,4rem)] font-extralight tracking-[-0.045em] text-white">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-600">Our Approach</p>
+          <h2 className="mt-5 text-[clamp(2.5rem,5vw,4rem)] font-extralight tracking-[-0.045em] text-[#111317]">
             A selective and disciplined process.
           </h2>
-          <p className="mt-6 max-w-3xl text-base font-light leading-8 text-white/62 sm:text-lg">
+          <p className="mt-6 max-w-3xl text-base font-light leading-8 text-[#64707C] sm:text-lg">
             We protect the reputation and time of both investors and founders by keeping every process discreet, selective, and focused from the outset.
           </p>
         </motion.div>
@@ -68,29 +68,29 @@ export default function HowWeWork() {
                   transition={{ delay: index * 0.07, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                   className={`relative min-h-[245px] rounded-[1.65rem] border p-6 text-left transition-all duration-300 sm:min-h-[260px] sm:p-7 ${
                     selected
-                      ? "border-cyan-300/50 bg-white/[0.11] shadow-[0_16px_40px_rgba(0,0,0,0.28)]"
-                      : "border-white/10 bg-white/[0.045] hover:border-white/20 hover:bg-white/[0.07]"
+                      ? "border-blue-500/40 bg-blue-50 shadow-[0_16px_40px_rgba(15,23,42,0.10)]"
+                      : "border-black/8 bg-white hover:border-blue-500/25 hover:bg-blue-50/50"
                   }`}
                 >
                   <span
                     className={`absolute right-6 top-6 h-2 w-2 rounded-full transition-all duration-300 ${
                       selected
-                        ? "scale-110 bg-cyan-300 shadow-[0_0_15px_rgba(103,232,249,0.8)]"
-                        : "bg-white/16"
+                        ? "scale-110 bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.35)]"
+                        : "bg-slate-300"
                     }`}
                     aria-hidden="true"
                   />
 
-                  <h3 className="pr-8 text-[1.55rem] font-light tracking-[-0.035em] text-white">
+                  <h3 className="pr-8 text-[1.55rem] font-light tracking-[-0.035em] text-[#111317]">
                     {step.title}
                   </h3>
-                  <p className={`mt-7 text-[13px] font-light leading-6 sm:text-sm sm:leading-7 ${selected ? "text-white/74" : "text-white/58"}`}>
+                  <p className={`mt-7 text-[13px] font-light leading-6 sm:text-sm sm:leading-7 ${selected ? "text-[#425466]" : "text-[#64707C]"}`}>
                     {step.text}
                   </p>
                 </motion.button>
 
                 {index < steps.length - 1 && (
-                  <div className="hidden w-8 items-center justify-center text-white/28 lg:flex" aria-hidden="true">
+                  <div className="hidden w-8 items-center justify-center text-slate-400 lg:flex" aria-hidden="true">
                     <ArrowRightIcon />
                   </div>
                 )}

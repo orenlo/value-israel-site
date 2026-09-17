@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #1E3550;
+  --background: #315D86;
   --foreground: #ffffff;
   --light-surface: #F7FAFD;
-  --dark-surface: #213650;
-  --blue-deep: #163A67;
-  --blue: #2D7FF7;
-  --blue-bright: #5AAEFF;
-  --cyan: #85E1FF;
+  --dark-surface: #315D86;
+  --blue-deep: #234B73;
+  --blue: #2F80ED;
+  --blue-bright: #59B0FF;
+  --cyan: #83E2FF;
 }
 
 * {
@@ -82,7 +82,7 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-  background: #17304A;
+  background: #234B73;
 }
 
 ::-webkit-scrollbar-thumb {

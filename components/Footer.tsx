@@ -2,7 +2,7 @@ import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/8 bg-[#16304B] py-10 text-white">
+    <footer className="border-t border-white/8 bg-[#203E5D] py-10 text-white">
       <div className="section-shell flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
         <div>
           <Logo className="h-8 w-10" withWordmark />

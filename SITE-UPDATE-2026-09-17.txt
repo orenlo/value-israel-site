@@ -1,0 +1,7 @@
+Value Israel site update
+
+- Tel Aviv hero photo moved to the final slide.
+- Section color sequence inverted: former light sections are blue; former blue sections are light.
+- New locally bundled sandal image added at public/images/value-israel-sandals.png.
+- Sandal image uses two blue/white outdoor sandals with no visible Source branding and an Israeli landscape background.
+- Existing content and responsive structure preserved.

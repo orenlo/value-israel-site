@@ -23,13 +23,13 @@ const partners = [
 
 export default function Partners() {
   return (
-    <section id="partners" className="relative overflow-hidden bg-[#213650] py-24 text-white sm:py-32">
+    <section id="partners" className="relative overflow-hidden bg-[#F7FAFD] py-24 text-[#111317] sm:py-32">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-[0.10] blur-[1px]"
+        className="absolute inset-0 bg-cover bg-center opacity-[0.035] blur-[1px]"
         style={{ backgroundImage: "url('/images/value-israel-banner-reference.png')" }}
       />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,#18304A_0%,rgba(33,54,80,0.94)_30%,rgba(33,54,80,0.90)_70%,#18304A_100%)]" />
-      <div className="grid-glow absolute inset-0 opacity-35" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(247,250,253,0.98)_0%,rgba(247,250,253,0.90)_30%,rgba(247,250,253,0.90)_70%,rgba(247,250,253,0.98)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(30,64,175,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(30,64,175,0.025)_1px,transparent_1px)] bg-[size:42px_42px]" />
 
       <div className="section-shell relative z-10">
         <motion.div
@@ -39,10 +39,10 @@ export default function Partners() {
           transition={{ duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
           className="text-center"
         >
-          <p className="text-[10px] font-semibold uppercase tracking-[0.48em] text-cyan-300 sm:text-xs">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.48em] text-blue-600 sm:text-xs">
             Partners
           </p>
-          <h2 className="mx-auto mt-6 max-w-4xl text-4xl font-extralight tracking-[-0.04em] text-white sm:text-6xl">
+          <h2 className="mx-auto mt-6 max-w-4xl text-4xl font-extralight tracking-[-0.04em] text-[#111317] sm:text-6xl">
             Trusted by leading global investors.
           </h2>
         </motion.div>
@@ -59,10 +59,10 @@ export default function Partners() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: index * 0.12, duration: 1, ease: [0.16, 1, 0.3, 1] }}
               style={{ transformPerspective: 1200 }}
-              className="group block rounded-[2rem] border border-white/10 bg-white/[0.05] p-8 shadow-[0_24px_80px_rgba(0,0,0,0.24)] backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:border-cyan-300/35 hover:bg-white/[0.08] sm:p-10"
+              className="group block rounded-[2rem] border border-black/8 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.08)] transition duration-500 hover:-translate-y-1 hover:border-blue-500/25 hover:shadow-[0_26px_70px_rgba(15,23,42,0.12)] sm:p-10"
             >
               <div className="flex items-center gap-5">
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white p-3 shadow-xl shadow-black/10">
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-black/8 bg-white p-3 shadow-xl shadow-black/10">
                   <img
                     src={`https://www.google.com/s2/favicons?domain=${partner.domain}&sz=256`}
                     alt={`${partner.name} logo`}
@@ -70,11 +70,11 @@ export default function Partners() {
                   />
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-[0.30em] text-cyan-300">{partner.subtitle}</p>
-                  <h3 className="mt-2 text-3xl font-light tracking-[-0.035em] text-white">{partner.name}</h3>
+                  <p className="text-xs uppercase tracking-[0.30em] text-blue-600">{partner.subtitle}</p>
+                  <h3 className="mt-2 text-3xl font-light tracking-[-0.035em] text-[#111317]">{partner.name}</h3>
                 </div>
               </div>
-              <p className="mt-7 max-w-xl text-sm font-light leading-7 text-white/55 sm:text-base">
+              <p className="mt-7 max-w-xl text-sm font-light leading-7 text-[#64707C] sm:text-base">
                 {partner.description}
               </p>
             </motion.a>
